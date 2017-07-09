@@ -1,0 +1,154 @@
+header {
+    /*position: fixed;*/
+    width: 100%;
+    height: 50px;
+    background: #5D4037;
+}
+
+nav {
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav>a, nav>span {
+    color: #D7CCC8;
+    font-size: 1.5rem;
+}
+nav a:hover {
+    color: #8BC34A;
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user_card {
+    background: #fff;
+    border-radius: 2px;
+    margin: 15px 0 0;
+    min-width: 300px;
+    width: 33.3333%;
+}
+
+.user_name {
+    background: #5D4037;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.user_photo {
+    max-height: 200px;
+    width: 100px;
+    float: left;
+    margin-right: 3%;
+}
+
+.user_photo>img {
+    height: 100%;
+    width: 100%;
+}
+
+.user_info {
+    font-size: 16px;
+}
+
+.spec {
+    background: #795548;
+    color: #fff;
+}
+
+.user_skills {
+    margin: 2% 5% 2% 1%;
+}
+
+.skills_title {
+    font-size: 1.2rem;
+    color: #8BC34A;
+    font-weight: 700;
+}
+
+.user_skills span {
+    color: #795548;
+    font-weight: 700;
+}
+
+.register {
+    width: 100%;
+    max-width: 960px;
+    margin: 15px auto;
+    background: #795548;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.register .title {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 3% 10%;
+    box-sizing: border-box;
+}
+
+form input, form select {
+    margin: 10px auto;
+    height: 30px;
+    width: 200px;
+}
+
+#experience {
+    width: 100px;
+}
+
+.tech p {
+    font-size: 1.4rem;
+    color: #BDBDBD;
+    margin: 10px 0;
+}
+
+.level_text {
+    color: #fff;
+}
+
+#level {
+    width: 30px;
+}
+
+.add_input {
+    padding: 0;
+    background: url('images/spec/plus_btn.png') no-repeat 0 0;
+    width: 45px;
+    height: 45px;
+    background-size: 45px;
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+.addbtn_text {
+    color: #BDBDBD;
+}
+
+.add_user {
+    height: 35px;
+    width: 200px;
+    background: #8BC34A;
+    color: #5D4037;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-weight: 600; 
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 3% 0;
+}
+
+.add_user:hover {
+    opacity: 1;
+}

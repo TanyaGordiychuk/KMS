@@ -1,0 +1,93 @@
+html {
+    font-family: 'Courier New', Garamond, sans-serif;
+    font-size: 14px;
+    height: 100%;
+    min-height: 790px;
+    min-width: 100%;
+    width: 100%;
+    color: #212121;
+}
+
+body, ul, ol, h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, button:active, button:focus {
+    outline: none;
+    border: none;
+    font-family: 'Courier New', sans-serif;
+}
+
+input, select {
+    border: none;
+    border-radius: 2px;
+    font-family: 'Courier New', sans-serif;
+    outline-color: #8BC34A; 
+}
+
+/*Style for select*/
+select {
+  -webkit-appearance: none;
+  background-image: url('images/spec/small_down_arrow.png');
+  background-size: 20px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+ 
+select::-ms-expand {
+  display: none;
+}
+
+body {
+    background: #D7CCC8;
+}
+
+.right {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    width: 13px;
+    opacity: 1;
+    background-image: url('images/spec/small_arrows.png');
+    background-size: 13px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+    width: 13px;
+    opacity: 1;
+    background-image: url('images/spec/small_arrows.png');
+    background-size: 13px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}

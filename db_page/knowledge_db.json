@@ -1,0 +1,319 @@
+[
+    {
+        "user": "David Smith",
+        "photo": "http://yebb.ru/gallery/zak-ehfron/zak-ehfron1.jpg",
+        "spec": "Front-end developer",
+        "experience": 3,
+        "english": "Upper-Intermediate",
+        "skills": [
+            {
+                "skill": "HTML/HTML5",
+                "level": 10
+            },
+            {
+                "skill": "CSS/CSS3, SASS",
+                "level": 10
+            },
+            {
+                "skill": "JavaScript",
+                "level": 9
+            },
+            {
+                "skill": "AngularJS",
+                "level": 8
+            },
+            {
+                "skill": "ReactJS",
+                "level": 7
+            },
+            {
+                "skill": "Java",
+                "level": 3
+            }
+        ]
+    },
+
+    {
+        "user": "Mary Jayson",
+        "photo": "http://modagid.ru/files/photos/imgs/131/131981/large_Emma_Stone_Amazing_Spider_Man_2_Stars_Sydney_XkKzUjY7CX8x.jpg?1397921544",
+        "spec": "QA",
+        "experience": 2,
+        "english": "Intermediate",
+        "skills": [
+            {
+                "skill": "Test design",
+                "level": 9
+            },
+            {
+                "skill": "Defects tracking",
+                "level": 10
+            },
+            {
+                "skill": "Requirements analysis",
+                "level": 10
+            },
+            {
+                "skill": "Functional testing",
+                "level": 10
+            },
+            {
+                "skill": "Automation testing",
+                "level": 5
+            },
+            {
+                "skill": "Test scope definition",
+                "level": 8
+            },
+            {
+                "skill": "Team communication",
+                "level": 9
+            }
+        ]
+    },
+
+    {
+        "user": "Jessica Wind",
+        "photo": "http://7kingdoms.ru/wp-content/uploads/2011/05/emilia-clarke.jpg",
+        "spec": "Back-end developer",
+        "experience": 2,
+        "english": "Intermediate",
+        "skills": [
+            {
+                "skill": "PHP",
+                "level": 10
+            },
+            {
+                "skill": "Laravel",
+                "level": 8
+            },
+            {
+                "skill": "HTML,CSS",
+                "level": 7
+            },
+            {
+                "skill": "JavaScript",
+                "level": 5
+            },
+            {
+                "skill": "Yii2",
+                "level": 8
+            },
+            {
+                "skill": "Python",
+                "level": 7
+            }
+        ]
+    },
+
+    {
+        "user": "Mark Jacobs",
+        "photo": "http://www.mypopulars.com/photos/robert-downey-jr/Robert-Downey-Jr-11.jpg",
+        "spec": "Java developer",
+        "experience": 7,
+        "english": "Advanced",
+        "skills": [
+            {
+                "skill": "Java",
+                "level": 10
+            },
+            {
+                "skill": "Rest",
+                "level": 10
+            },
+            {
+                "skill": "Spring Core, Spring Boot, Spring Security",
+                "level": 10
+            },
+            {
+                "skill": "MySQL",
+                "level": 10
+            },
+            {
+                "skill": "PingFed",
+                "level": 9
+            },
+            {
+                "skill": "HTML/JS/CSS",
+                "level": 9
+            },
+            {
+                "skill": "Team communication",
+                "level": 10
+            }
+        ]
+    },
+
+    {
+        "user": "Whitney Spilberg",
+        "photo": "https://www.wmj.ru/imgs/2016/12/05/07/891360/6e932bb92baa568e9377a874cf75db0aa3c1aa90.jpg",
+        "spec": "QA",
+        "experience": 4,
+        "english": "Advanced",
+        "skills": [
+            {
+                "skill": "Test design",
+                "level": 10
+            },
+            {
+                "skill": "Defects tracking",
+                "level": 10
+            },
+            {
+                "skill": "Requirements analysis",
+                "level": 10
+            },
+            {
+                "skill": "Functional testing",
+                "level": 10
+            },
+            {
+                "skill": "Automation testing",
+                "level": 10
+            },
+            {
+                "skill": "Test scope definition",
+                "level": 9
+            },
+            {
+                "skill": "Java",
+                "level": 8
+            }
+        ]
+    },
+
+    {
+        "user": "Anton Ivanov",
+        "photo": "https://proxy11.online.ua/parni/r3-125d8e8145/middle_4f212b0e0161c.jpg",
+        "spec": "Front-end developer",
+        "experience": 0.5,
+        "english": "Intermediate",
+        "skills": [
+            {
+                "skill": "HTML/HTML5",
+                "level": 9
+            },
+            {
+                "skill": "CSS/CSS3, SASS",
+                "level": 9
+            },
+            {
+                "skill": "JavaScript",
+                "level": 8
+            },
+            {
+                "skill": "AngularJS",
+                "level": 7
+            },
+            {
+                "skill": "ReactJS",
+                "level": 2
+            },
+            {
+                "skill": "C++",
+                "level": 3
+            }
+        ]
+    },
+
+    {
+        "user": "Ivan Shevchenko",
+        "photo": "http://kinoafisha.ua/upload/persons/1120/src_1404335387rayan-reynolds.jpg",
+        "spec": "Java developer",
+        "experience": 7,
+        "english": "Advanced",
+        "skills": [
+            {
+                "skill": "Java",
+                "level": 10
+            },
+            {
+                "skill": "Rest",
+                "level": 10
+            },
+            {
+                "skill": "Spring Core, Spring Boot, Spring Security",
+                "level": 10
+            },
+            {
+                "skill": "MySQL",
+                "level": 10
+            },
+            {
+                "skill": "PingFed",
+                "level": 9
+            },
+            {
+                "skill": "HTML/JS/CSS",
+                "level": 9
+            }
+        ]
+    },
+
+    {
+        "user": "Mike Oslo",
+        "photo": "http://i3.mirror.co.uk/incoming/article3107497.ece/ALTERNATES/s615b/Heath-Ledger.jpg",
+        "spec": ".Net developer",
+        "experience": 5,
+        "english": "Upper-Intermediate",
+        "skills": [
+            {
+                "skill": ".NET",
+                "level": 10
+            },
+            {
+                "skill": "C#",
+                "level": 9
+            },
+            {
+                "skill": "Visual Studio",
+                "level": 9
+            },
+            {
+                "skill": "TFS",
+                "level": 10
+            },
+            {
+                "skill": "HTML/CSS",
+                "level": 7
+            },
+            {
+                "skill": "JS",
+                "level": 6
+            }
+        ]
+    },
+
+    {
+        "user": "Masha Petrenko",
+        "photo": "http://cdn-new.vokrug.tv/pic/person/3/2/8/0/3280dea5ab6b004d15ce31fb366b7fb5.jpeg",
+        "spec": "Back-end developer",
+        "experience": 0.5,
+        "english": "Intermediate",
+        "skills": [
+            {
+                "skill": "PHP",
+                "level": 8
+            },
+            {
+                "skill": "Laravel",
+                "level": 5
+            },
+            {
+                "skill": "HTML,CSS",
+                "level": 7
+            },
+            {
+                "skill": "JavaScript",
+                "level": 4
+            },
+            {
+                "skill": "Yii2",
+                "level": 5
+            },
+            {
+                "skill": "Python",
+                "level": 7
+            }
+        ]
+    }
+]

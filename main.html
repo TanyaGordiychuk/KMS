@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Knowledge system</title>
+    <link rel="stylesheet" href="main/base.css">
+    <link rel="stylesheet" href="main/main.css">
+</head>
+<body>
+    <header id="nav">
+        <div class="navMain">
+            <nav>
+                <a href="#nav" class="scrollto">Main</a>
+                <span>|</span>
+                <a href="#main" class="scrollto">Content</a>
+                <span>|</span>
+                <a href="#gallery" class="scrollto">Gallery</a>
+            </nav>
+        </div>
+    </header>
+    <div class="slider_wraper">
+        <div class="slider">
+            <div class="slides">
+                <img class="slide showing" src="images/img1.jpg" alt="First joke">
+                <img class="slide" src="images/img2.jpg" alt="Second joke">
+                <img class="slide" src="images/img3.jpg" alt="Third joke">
+                <img class="slide" src="images/img4.jpg" alt="Fourth joke">
+                <div class="controls">
+                    <button id="previous">&lt;</button>
+                    <button id="pause">&#10074;&#10074;</button>
+                    <button id="next">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <main id="main">
+        <div class="intro">
+            <p class="bigger_text">If you understand the jokes from the slideshow, we are glad to welcome you to</p>
+            <img src="images/logo.png" alt="KMS logo">
+            <p class="smaller_text">KMS it`s a knowledge management system where users {programmers} indicate and evaluate their 
+                knowledge in different areas.</p>
+            <p class="bigger_text">Quite interesting?</p>
+            <p class="smaller_text">Then we are proud to offer to become a part of KMS</p>
+            <form action="db_page/db_page.html">
+                <button class="toBD_btn">Become a part</button>
+            </form>
+            <p class="smaller_text">...Or you can can also see more jokes in our gallery below</p>
+            <a href="#gallery" class="scrollto">
+                <img src="images/spec/arrow.png">
+            </a>
+        </div>
+    </main>
+    <div class="line"></div>
+    <!--<div class="gallery_wrapper">-->
+        <div class="gallery" id="gallery">
+            <img src="images/img5.jpg">
+            <img src="images/img6.jpg">
+            <img src="images/img7.jpg">
+            <img src="images/img8.jpg">
+            <img src="images/img9.jpg">
+            <img src="images/img10.jpg">
+        </div>
+    <!--</div>-->
+    <footer>
+        <div class="contacts_wrapper">
+            <div id="map"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXslX9VE_-g3sVD_MiSEp4PxhFdI2LUhM&callback=initMap" async defer></script>
+</body>
+</html>

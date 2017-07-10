@@ -16,10 +16,9 @@ header {
 
 .menu_wrapper {
     max-width: 960px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
-    /*box-sizing: border-box;
-    padding: 0 5%;*/
 }
 
 .menu {
@@ -27,6 +26,7 @@ header {
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 12px;
+    font-size: 1.7rem;
 }
 
 .menu>li {
@@ -38,7 +38,6 @@ header {
 .menu a, .menu span {
     display: block;
     color: #fff;
-    font-size: 1.7rem;
 }
 
 .menu_toggle>span {
@@ -140,6 +139,7 @@ header {
 }
 
 .line {
+    position: relative;
     height: 5px;
     max-width: 960px;
     width: 100%;
@@ -149,6 +149,7 @@ header {
 }
 
 main {
+    position: relative;
     width: 100%;
     background: #D7CCC8;
 }

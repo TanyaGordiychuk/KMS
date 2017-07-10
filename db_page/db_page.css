@@ -1,27 +1,70 @@
 header {
-    /*position: fixed;*/
+    position: relative;
     width: 100%;
     height: 50px;
     background: #5D4037;
 }
 
-nav {
+.fixed_wrapper {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #5D4037;
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.menu_wrapper {
     max-width: 960px;
     height: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /*box-sizing: border-box;
+    padding: 0 5%;*/
+}
 
+.menu {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
 }
-nav>a, nav>span {
-    color: #D7CCC8;
-    font-size: 1.5rem;
+
+.menu>li {
+    float: left;
+    position: relative;
+    margin: 0 10px;
 }
-nav a:hover {
+
+.menu a, .menu span {
+    display: block;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.menu_toggle>span {
+    cursor: pointer;
+}
+
+.menu a:hover, .menu_toggle>span:hover {
     color: #8BC34A;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 110px;
+    top: 25px;
+    left: -10px;
+}
+.submenu > li {
+    display: block;
+}
+.submenu > li > a {
+    display: block;
+    padding: 7px;
+    color: #fff;
+    background-color: #5D4037;
+    font-size: 1.2rem;
 }
 
 main {
@@ -178,4 +221,16 @@ form input, form select {
 
 .add_user:hover {
     opacity: 1;
+}
+
+footer {
+    width: 100%;
+    background: #212121;
+    margin: 15px 0 0;
+}
+
+.copyright {
+    text-align: right;
+    color: #757575;
+    padding: 0 30px;
 }

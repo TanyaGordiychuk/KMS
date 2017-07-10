@@ -1,3 +1,20 @@
+//Submenu
+$(".menu_toggle").click(function() {
+    $(this).children(".submenu").toggle();
+});
+
+$(".menu_toggle").mouseleave(function() {
+    $(this).children(".submenu").css("display", "none");
+});
+
+$(".submenu").mouseleave(function() {
+    $(this).css("display", "none");
+});
+
+$(".submenu a").click(function() {
+    $(this).parent("li").parent(".submenu").toggle();
+});
+
 //Get data from json
 $.ajax({
     type: "GET",

@@ -9,14 +9,29 @@
     <link rel="stylesheet" href="db_page.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../main.html#nav">Main</a>
-            <span>|</span>
-            <a href="../main.html#main">Content</a>
-            <span>|</span>
-            <a href="../main.html#gallery">Contacts</a>
-        </nav>
+    <header id="nav">
+        <div class="fixed_wrapper">
+            <div class="menu_wrapper">
+                <ul class="menu clear">
+                    <li><a href="../main.html#nav"> &lt;Header&gt; </a></li>
+                    <li><span> | </span></li>
+                    <li class="menu_toggle"><span>&lt;Main&gt;</span>
+                        <ul class="submenu">
+                            <li><a href="../main.html#main">About us</a></li>
+                            <li><a href="db_page.html#nav">Knowledge database</a></li>
+                            <li><a href="../main.html#gallery">Jokes gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><span> | </span></li>
+                    <li class="menu_toggle"><span> &lt;Footer&gt; </span>
+                        <ul class="submenu">
+                            <li><a href="../main.html#footer">Contacts</a></li>
+                            <li><a href="../main.html#map">How to find us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <div id="content" class="content_wrapper">
@@ -49,6 +64,11 @@
             <button class="add_user">Create card</button>
         </form>
     </div>
+    <footer id="footer">
+        <div class="copyright">
+            <p>&copy; Tatyana Gordiychuk, 2017</p>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="db_script.js"></script>
 </body>

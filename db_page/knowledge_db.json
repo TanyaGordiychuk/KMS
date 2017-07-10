@@ -315,5 +315,137 @@
                 "level": 7
             }
         ]
+    },
+
+    {
+        "user": "Alex Brechko",
+        "photo": "http://www.lovethispic.com/uploaded_images/167036-Johnny-Depp.jpg",
+        "spec": "Front-end developer",
+        "experience": 2,
+        "english": "Intermediate",
+        "skills": [
+            {
+                "skill": "HTML/HTML5",
+                "level": 10
+            },
+            {
+                "skill": "CSS/CSS3",
+                "level": 10
+            },
+            {
+                "skill": "SASS,LESS, Stylus",
+                "level": 9
+            },
+            {
+                "skill": "JavaScript",
+                "level": 9
+            },
+            {
+                "skill": "AngularJS",
+                "level": 8
+            },
+            {
+                "skill": "C++",
+                "level": 2
+            }
+        ]
+    },
+
+    {
+        "user": "Viktoria Kovalchuk",
+        "photo": "http://img.usmagazine.com/article-leads-vertical-300/1251206288_sandra_bullock_290x402.jpg",
+        "spec": "Java developer",
+        "experience": 3,
+        "english": "Advanced",
+        "skills": [
+            {
+                "skill": "Java",
+                "level": 10
+            },
+            {
+                "skill": "Rest",
+                "level": 10
+            },
+            {
+                "skill": "Spring",
+                "level": 7
+            },
+            {
+                "skill": "MySQL",
+                "level": 10
+            },
+            {
+                "skill": "HTML/CSS/JS",
+                "level": 7
+            }
+        ]
+    },
+
+    {
+        "user": "Mark Viter",
+        "photo": "https://peopledotcom.files.wordpress.com/2017/04/brad-pitt-1.jpg",
+        "spec": "Back-end developer",
+        "experience": 5,
+        "english": "Upper-Intermediate",
+        "skills": [
+            {
+                "skill": "PHP",
+                "level": 10
+            },
+            {
+                "skill": "Laravel",
+                "level": 10
+            },
+            {
+                "skill": "HTML,CSS",
+                "level": 9
+            },
+            {
+                "skill": "JavaScript",
+                "level": 9
+            },
+            {
+                "skill": "Yii2",
+                "level": 8
+            },
+            {
+                "skill": "Python",
+                "level": 7
+            }
+        ]
+    },
+
+    {
+        "user": "Anton Step",
+        "photo": "http://img.usmagazine.com/article-leads-vertical-300/1250018829_ashton_kutcher_290x402.jpg",
+        "spec": ".Net developer",
+        "experience": 5,
+        "english": "Upper-Intermediate",
+        "skills": [
+            {
+                "skill": ".NET",
+                "level": 10
+            },
+            {
+                "skill": "C#",
+                "level": 9
+            },
+            {
+                "skill": "Visual Studio",
+                "level": 9
+            },
+            {
+                "skill": "TFS",
+                "level": 10
+            },
+            {
+                "skill": "HTML/CSS",
+                "level": 7
+            },
+            {
+                "skill": "JS",
+                "level": 6
+            }
+        ]
     }
 ]

@@ -24,7 +24,7 @@ function jsonParser(jsondata) {
 
         var userSkills = skillsArr.join("");
 
-        $("main").append(
+        $("#content").append(
             "<div class=\"user_card\">" +
                 "<div class=\"user_name\">" +el.user+ "</div>" +
                 "<div>"+
@@ -43,6 +43,73 @@ function jsonParser(jsondata) {
         );
     }, this);
 };
+
+//Pagination
+var Imtech = {};
+Imtech.Pager = function() {
+
+    this.paragraphsPerPage = 6;
+    this.currentPage = 1;
+    this.pagingControlsContainer = '#pagingControls';
+    this.pagingContainerPath = '#content';
+    // number of pages
+    this.numPages = function() {
+        var numPages = 0;
+
+        if (this.paragraphs != null && this.paragraphsPerPage != null) {
+            // ceil - returns the smallest integer
+            numPages = Math.ceil(this.paragraphs.length / this.paragraphsPerPage);
+        }
+
+        return numPages;
+    };
+    
+    // page - The current (open - number) page, that is, we pass to the function the number of the 
+    //current page, the content that we output then
+    this.showPage = function(page) {
+        this.currentPage = page;
+        var html = '';
+        // slice - This method does not change the original array, but simply returns its part. 
+        //it displays the content that corresponds to the current page
+        this.paragraphs.slice((page-1) * this.paragraphsPerPage,
+            ((page-1)*this.paragraphsPerPage) + this.paragraphsPerPage).each(function() {
+            html += '<div>' + $(this).html() + '</div>';
+        });
+        // insert content
+        $(this.pagingContainerPath).html(html);
+        // #pagingControls,  current page,  total number of pages     
+        renderControls(this.pagingControlsContainer, this.currentPage, this.numPages());
+    }
+    
+    // Block with navigation
+    var renderControls = function(container, currentPage, numPages) {
+        // Markup with navigation
+        var pagingControls = 'Page: <ul>';
+        for (var i = 1; i <= numPages; i++) {
+            if (i != currentPage) {
+                pagingControls += '<li><a href="#" onclick="pager.showPage(' + i + '); return false;">' + i + '</a></li>';
+            } else {
+                pagingControls += '<li>' + i + '</li>';
+            }
+        }
+
+        pagingControls += '</ul>';
+
+        $(container).html(pagingControls);
+    }   
+}
+
+var pager = new Imtech.Pager();
+$(document).ready(function() {
+    // Number of output paragraphs () or div on one page
+    pager.paragraphsPerPage = 6; 
+    // Main container
+    pager.pagingContainer = $('#content'); 
+    // Denote the required block
+    pager.paragraphs = $('div.user_card', pager.pagingContainer); 
+    pager.showPage(1);
+});   
+
 
 //Add input for more skills
 $(".add_input").click(function() {

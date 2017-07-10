@@ -10,17 +10,30 @@
 </head>
 <body>
     <header id="nav">
-        <div class="navMain">
-            <nav>
-                <a href="#nav" class="scrollto">Main</a>
-                <span>|</span>
-                <a href="#main" class="scrollto">Content</a>
-                <span>|</span>
-                <a href="#gallery" class="scrollto">Gallery</a>
-            </nav>
+        <div class="fixed_wrapper">
+            <div class="menu_wrapper">
+                <ul class="menu clear">
+                    <li><a href="#nav" class="scrollto"> &lt;Header&gt; </a></li>
+                    <li><span> | </span></li>
+                    <li class="menu_toggle"><span>&lt;Main&gt;</span>
+                        <ul class="submenu">
+                            <li><a href="#main" class="scrollto">About us</a></li>
+                            <li><a href="db_page/db_page.html" class="scrollto">Knowledge database</a></li>
+                            <li><a href="#gallery" class="scrollto">Jokes gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><span> | </span></li>
+                    <li class="menu_toggle"><span> &lt;Footer&gt; </span>
+                        <ul class="submenu">
+                            <li><a href="#footer" class="scrollto">Contacts</a></li>
+                            <li><a href="#map" class="scrollto">How to find us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <div class="slider_wraper">
+    <div class="slider_wrapper">
         <div class="slider">
             <div class="slides">
                 <img class="slide showing" src="images/img1.jpg" alt="First joke">
@@ -54,19 +67,35 @@
         </div>
     </main>
     <div class="line"></div>
-    <!--<div class="gallery_wrapper">-->
-        <div class="gallery" id="gallery">
-            <img src="images/img5.jpg">
-            <img src="images/img6.jpg">
-            <img src="images/img7.jpg">
-            <img src="images/img8.jpg">
-            <img src="images/img9.jpg">
-            <img src="images/img10.jpg">
-        </div>
-    <!--</div>-->
-    <footer>
+    <div class="gallery" id="gallery">
+        <img src="images/img5.jpg">
+        <img src="images/img6.jpg">
+        <img src="images/img7.jpg">
+        <img src="images/img8.jpg">
+        <img src="images/img9.jpg">
+        <img src="images/img10.jpg">
+    </div>
+    <footer id="footer">
         <div class="contacts_wrapper">
+            <p class="contact_text">Our contact information</p>
+            <div class="contact_info">
+                <div class="number">
+                    <img src="images/spec/phone.png">
+                    <p>+38(093)777-77-77</p>
+                </div>
+                <div class="mail">
+                    <img src="images/spec/mail.png">
+                    <p>tetyanagordey21@gmail.com</p>
+                </div>
+                <div class="location">
+                    <img src="images/spec/place.png">
+                    <p>L.Kurbas Avenue,18</p>
+                </div>
+            </div>
             <div id="map"></div>
+        </div>
+        <div class="copyright">
+                <p>&copy; Tatyana Gordiychuk, 2017</p>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,3 +1,12 @@
+//Submenu
+$(".menu_toggle").click(function() {
+    $(this).children(".submenu").toggle();
+});
+
+$(".submenu a").click(function() {
+    $(this).parent("li").parent(".submenu").toggle();
+});
+
 //Smooth transition
 $(document).ready(function() {
   $("a.scrollto").click(function () {

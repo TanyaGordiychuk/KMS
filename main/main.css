@@ -5,7 +5,7 @@ header {
     background: #5D4037;
 }
 
-.navMain {
+.fixed_wrapper {
     position: fixed;
     width: 100%;
     height: 50px;
@@ -14,30 +14,66 @@ header {
     z-index: 999;
 }
 
-nav {
+.menu_wrapper {
     max-width: 960px;
     height: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /*box-sizing: border-box;
+    padding: 0 5%;*/
+}
 
+.menu {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
 }
-nav>a,span {
+
+.menu>li {
+    float: left;
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu a, .menu span {
+    display: block;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
-nav a:hover {
+
+.menu_toggle>span {
+    cursor: pointer;
+}
+
+.menu a:hover, .menu_toggle>span:hover {
     color: #8BC34A;
 }
 
-.slider_wraper {
+.submenu {
+    display: none;
+    position: absolute;
+    width: 142px;
+    top: 38px;
+    left: -15px;
+}
+.submenu > li {
+    display: block;
+}
+.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    background-color: #5D4037;
+    font-size: 1.2rem;
+}
+
+/*.menu > li:hover > .submenu {
+    display: block;
+}*/
+
+.slider_wrapper {
     width: 100%;
     height: 420px;
-    background: #D7CCC8;
-
 }
 
 .slider {
@@ -210,6 +246,7 @@ main {
 footer {
     width: 100%;
     background: #212121;
+    margin: 15px 0 0;
 }
 
 .contacts_wrapper {
@@ -218,7 +255,36 @@ footer {
     margin: 0 auto;
 }
 
+.contact_text {
+    color: #BDBDBD;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 4%;
+}
+
+.contact_info {
+    color: #BDBDBD;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact_info>div {
+    margin: 0 4%;
+}
+
+.contact_info img {
+    width: 40px;
+}
+
 #map {
-    height: 300px;
-    width: 40%;
+    height: 150px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.copyright {
+    text-align: right;
+    color: #757575;
+    padding: 0 30px;
 }

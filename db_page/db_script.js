@@ -170,7 +170,7 @@ $(".add_user").click(function() {
     console.log(userdata);
 
     $.ajax({
-        url: "knowledge_db.json",
+        url: "https://rawgit.com/TanyaGordiychuk/KMS/master/db_page/knowledge_db.json",
         type: "POST",
         data: JSON.stringify(userdata),
         dataType: "json",

@@ -97,14 +97,13 @@ main {
 }
 
 .user_photo {
-    max-height: 200px;
+    height: 150px;
     width: 100px;
     float: left;
     margin-right: 3%;
 }
 
 .user_photo>img {
-    height: 100%;
     width: 100%;
 }
 

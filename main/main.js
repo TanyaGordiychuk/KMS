@@ -28,7 +28,7 @@ $(document).ready(function() {
 //Slideshow
 var slides = document.querySelectorAll('.slides .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
+var slideInterval = setInterval(nextSlide,4000);
  
 function nextSlide() {
     goToSlide(currentSlide+1);
@@ -56,7 +56,7 @@ function pauseSlideshow() {
 function playSlideshow() {
     pauseBtn.innerHTML = '&#10074;&#10074;';
     playing = true;
-    slideInterval = setInterval(nextSlide,2000);
+    slideInterval = setInterval(nextSlide,4000);
 }
  
 pauseBtn.onclick = function() {

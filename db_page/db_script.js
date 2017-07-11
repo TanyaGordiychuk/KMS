@@ -16,50 +16,53 @@ $(".submenu a").click(function() {
 });
 
 //Get data from json
-$.ajax({
-    type: "GET",
-    url: "knowledge_db.json",
-    dataType: "json",
-    success: jsonParser,
-    error: function() {
-        console.log("Can`t get data");
-    }
-});
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "https://rawgit.com/TanyaGordiychuk/KMS/master/db_page/knowledge_db.json",
+        dataType: "json",
+        async: false,
+        success: jsonParser,
+        error: function() {
+            console.log("Can`t get data");
+        }
+    });
 
-function jsonParser(jsondata) {
-    console.log("Seccessful data download!")
-    
-    var data = jsondata;
+    function jsonParser(jsondata) {
+        console.log("Seccessful data download!")
+        
+        var data = jsondata;
 
-    data.forEach(function(el) {
-        var skills = el.skills;
-        var skillsArr = [];
+        data.forEach(function(el) {
+            var skills = el.skills;
+            var skillsArr = [];
 
-        skills.forEach(function(arr) {
-            skillsArr.push("<p>" +arr.skill+ ": <span class=\"right clear\">" +arr.level+ "/10</span></p>");
-        }, this);
+            skills.forEach(function(arr) {
+                skillsArr.push("<p>" +arr.skill+ ": <span class=\"right clear\">" +arr.level+ "/10</span></p>");
+            }, this);
 
-        var userSkills = skillsArr.join("");
+            var userSkills = skillsArr.join("");
 
-        $("#content").append(
-            "<div class=\"user_card\">" +
-                "<div class=\"user_name\">" +el.user+ "</div>" +
-                "<div>"+
-                    "<div class=\"user_photo\"><img src=\"" +el.photo+ "\"></div>" +
-                    "<div class=\"user_info clear\">" +
-                        "<p class=\"spec\">" +el.spec+ "</p>" +
-                        "<p>Experience: " +el.experience+ " years</p>" +
-                        "<p>English: " +el.english+ "</p>" +
+            $("#content").append(
+                "<div class=\"user_card\">" +
+                    "<div class=\"user_name\">" +el.user+ "</div>" +
+                    "<div>"+
+                        "<div class=\"user_photo\"><img src=\"" +el.photo+ "\"></div>" +
+                        "<div class=\"user_info clear\">" +
+                            "<p class=\"spec\">" +el.spec+ "</p>" +
+                            "<p>Experience: " +el.experience+ " years</p>" +
+                            "<p>English: " +el.english+ "</p>" +
+                        "</div>" +
                     "</div>" +
-                "</div>" +
-                "<div class=\"user_skills\">" +
-                    "<p class=\"skills_title\"> Professional skills: </p>" +
-                    userSkills+
-                "</div>" +
-            "</div>"
-        );
-    }, this);
-};
+                    "<div class=\"user_skills\">" +
+                        "<p class=\"skills_title\"> Professional skills: </p>" +
+                        userSkills+
+                    "</div>" +
+                "</div>"
+            );
+        }, this);
+    };
+});
 
 //Pagination
 var Imtech = {};
@@ -183,3 +186,12 @@ $(".add_user").click(function() {
 
     return false;
 });
+
+//sort
+$(".fe_sortBtn").click(function() {
+    var usernames = $(".content_wrapper .user_name");
+    console.log(usernames);
+});
+
+
+//search

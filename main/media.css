@@ -4,6 +4,8 @@
     /*for main page*/
     .menu {
         margin-left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
         transform: none;
         font-size: 1.5rem;
     }

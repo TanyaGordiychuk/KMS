@@ -187,11 +187,3 @@ $(".add_user").click(function() {
     return false;
 });
 
-//sort
-$(".fe_sortBtn").click(function() {
-    var usernames = $(".content_wrapper .user_name");
-    console.log(usernames);
-});
-
-
-//search

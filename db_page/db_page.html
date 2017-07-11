@@ -42,8 +42,8 @@
         <p class="title">So if you want to become a part of KMS you just need to fill a simple form</p>
         <form>
             <div class="non_tech">
-                <input type="text" id="user" placeholder="Name">
-                <input type="text" id="spec" placeholder="Specialization">
+                <input type="text" id="user" placeholder="Name" pattern="[a-zA-Z]" required>
+                <input type="text" id="spec" placeholder="Specialization" required>
                 <input type="number" id="experience" min="0.5" step="0.5" placeholder="Experience">
                 <select name="en" id="english" placeholder="English level">
                     <option disabled selected>English level</option>
@@ -55,9 +55,9 @@
             </div>
             <div class="tech">
                 <p>Professional skills</p>
-                <input type="text" id="skill" placeholder="Your skill">
+                <input type="text" id="skill" placeholder="Your skill" required>
                 <span class="level_text">Skill level from 1 to 10</span>
-                <input type="number" id="level" min="1" max="10"><br>
+                <input type="number" id="level" min="1" max="10" required><br>
             </div>
             <button class="add_input"></button>
             <p class="addbtn_text">/*for more skills click on plus button*/</p>

@@ -74,6 +74,38 @@ main {
     margin: 0 auto;
 }
 
+.search {
+    background: #5D4037;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    border-radius: 2px;
+    margin: 15px 0 0;
+}
+
+.search .input {
+  padding: 8px 42px 8px 15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px; 
+}
+
+.search .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 60%;
+    cursor: pointer;
+    background: url('../images/spec/search.png') 50% no-repeat;
+    opacity: 0.5;
+    background-size: 25px;
+}
+
+.search .submit:hover {
+    opacity: 0.8;
+}
+
 .content_wrapper {
     width: 100%;
     display: -webkit-box;
@@ -94,6 +126,7 @@ main {
 .user_name {
     background: #5D4037;
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .user_photo {
